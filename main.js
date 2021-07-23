@@ -3,7 +3,7 @@ function cadastroPessoa(){
     var emailUsuario = document.getElementById("emailUsuario");
     var telefoneUsuario = document.getElementById("telefoneUsuario");
     
-    var dados = localStorage.getItem("dadosPessoa");
+    var dados = JSON.parse(localStorage.getItem("dadosPessoa"));
 
     if(dados != null){
         localStorage.setItem("dadosPessoa", "[]" );
