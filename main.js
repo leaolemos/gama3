@@ -5,7 +5,7 @@ function cadastroPessoa(){
     
     var dados = JSON.parse(localStorage.getItem("dadosPessoa"));
 
-    if(dados != null){
+    if(dados == null){
         localStorage.setItem("dadosPessoa", "[]" );
         dados = [];
     
